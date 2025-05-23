@@ -1,6 +1,21 @@
 [package]
-name = "view"
-version = "0.1.0"
+name = "view-img"
+description = "Simple image viewing CLI"
+version = "1.0.0"
+authors = ["Devin Droddy <devin.droddy@gmail.com>"]
+license = "GPL-3.0"
+repository = "https://github.com/justdeeevin/view-img"
+keywords = ["image", "kitty", "sixel", "iterm2"]
+categories = ["command-line-utilities"]
+readme = "README.md"
 edition = "2024"
 
 [dependencies]
+crossterm = "0.29.0"
+ratatui = "0.29.0"
+color-eyre = "0.6.4"
+ratatui-image = "8.0.0"
+image = "0.25.6"
+clap = { version = "4.5.38", features = ["derive"] }
+oneshot = "0.1.11"
+throbber-widgets-tui = "0.8.0"
